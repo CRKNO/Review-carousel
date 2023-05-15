@@ -60,6 +60,13 @@ main{
 
     background-color: var(--white-smoke);
 }
+.reviewer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /*profile image*/
 .img-container{
     position:relative;
@@ -90,15 +97,16 @@ main{
 
     color: var(--very-dark-blue);
 }
-.review-text-container .reviwer-name{
+.review-text-container .reviewer-name{
     letter-spacing: .2rem;
 }
-.review-text-container .reviwer-profession{
+.review-text-container .reviewer-profession{
     font-size: 1.2rem;
     text-transform: uppercase;
     color: var(--ocean-blue);
 }
 .review-text-container .review{
+    min-height: 6rem;
     margin-top: .5rem;
 
     font-size: 1.2rem;
