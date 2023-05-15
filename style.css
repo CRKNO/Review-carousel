@@ -1,0 +1,138 @@
+:root{
+    --sky-blue: #0088ff;
+    --ocean-blue: #0066c0;
+    --light-grey: #d2dae3;
+    --white-smoke: whitesmoke;
+    --very-dark-blue: #00132d;
+    --dark-blue: #003379;
+    --primary-button: #c8dcff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: var(--light-grey);
+}
+
+
+/* || header */
+header{
+    display: grid;
+    place-content: center;
+    gap:.7rem;
+    
+    height: 6rem;
+
+    color:var(--very-dark-blue);
+}
+header div{
+    justify-self: center;
+
+    width: 7rem;
+    border-bottom: .4rem solid var(--sky-blue);
+    border-radius: 1rem;
+}
+
+
+/* || Review Card*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+
+    box-sizing: border-box;
+    width: 80%;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+
+    background-color: var(--white-smoke);
+}
+/*profile image*/
+.img-container{
+    position:relative;
+    width: auto;
+}
+.img-container .profile-photo{
+    width: 15rem;
+    border-radius: 100%;
+    box-shadow: .6rem -.2rem #0088ff;
+}
+.img-container .commas{
+    position:absolute;
+    top: 0;
+    left: 0;
+
+    width: 3rem;
+    padding:.5rem;
+    border-radius: 100%;
+
+    background-color: var(--sky-blue);
+}
+/*Review text*/
+.review-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.5rem;
+
+    color: var(--very-dark-blue);
+}
+.review-text-container .reviwer-name{
+    letter-spacing: .2rem;
+}
+.review-text-container .reviwer-profession{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--ocean-blue);
+}
+.review-text-container .review{
+    margin-top: .5rem;
+
+    font-size: 1.2rem;
+
+    color:var(--dark-blue);
+}
+/*nav arrows*/
+.nav-arrows{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    width: 8rem;
+}
+.nav-arrows img{
+    width: 2rem;
+}
+.nav-arrows img:hover{
+    cursor: pointer;
+}
+.nav-arrows .left-arrow{
+    transform: rotate(90deg);
+}
+.nav-arrows .right-arrow{
+    transform: rotate(-90deg);
+}
+/*button*/
+.surprise-button{
+    width: 10rem;
+    height: 1.8rem;
+
+    border:.15rem solid var(--sky-blue);
+    border-radius: .3rem;
+
+    color:var(--sky-blue);
+    background-color: var(--primary-button);
+}
