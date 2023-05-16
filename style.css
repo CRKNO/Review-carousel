@@ -74,6 +74,7 @@ main{
 }
 .img-container .profile-photo{
     width: 15rem;
+    height: 15rem;
     border-radius: 100%;
     box-shadow: .6rem -.2rem #0088ff;
 }
